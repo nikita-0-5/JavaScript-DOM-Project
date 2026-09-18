@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Guides&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Laundry Wallah Cart</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <h1>Laundry Wallah</h1>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="username">
+                <img src="https://i.pravatar.cc/40" alt="profile">
+                <button>
+                    <i class="fa fa-sign-out"></i>
+                </button>
+            </div>
+        </div>
+
+    </header>
+    <!----================main-section================---->
+
+    <section>
+        <div class="main-container">
+
+            <!----================left================---->
+            <div class="left">
+
+                <div class="left1" id="cartSec">
+                    <h3>Added Items</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Service Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="cartItems">
+
+                            <!-- cart elements -->
+                        </tbody>
+                    </table>
+
+                    <div class="EmptyCart" id="emptyCart">
+                        <span><i class="fa fa-info-circle"></i></span>
+                        <h4>No items added</h4>
+                        <p>Add items in the cart from the service bar</p>
+                    </div>
+
+                    <h4 class="total-amount">Total Amount: Rs. <span id="totalAmount">0</span></h4>
+                </div>
+
+
+
+
+                <div class="left2">
+
+                    <h4>Book Now</h4>
+
+                    <form class= "booking-form" action="#">
+                        <label for="CustomerName">Full Name</label>
+                        <input type="text" id="CustomerName" placeholder="Full Name">
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" placeholder="name123@example.com">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="XXXXX">
+                    </form>
+
+                    <button class="bookBtn" id="bookBtn">Book Now</button>
+                    <p id="bookingMessage" class="message"></p>
+                </div>
+            </div>
+
+
+
+            <!----================right================---->
+
+            <div class="right">
+
+
+                <h3>Browse Our Services</h3>
+
+                <p class="rightp">Click on add to cart button to add services in your cart or press skip</p>
+                <div class="serviceCards" id="serviceCards">
+
+                   
+
+                    
+
+                </div>
+
+                
+                <hr>
+                <p class="lastinfo"><span><i class="fa fa-info-circle"></i></span> Add the items to the cart and book now</p>
+                <div class="right-btns">
+                    <button class="addtocart">Book Now</button>
+                    <button class="addtocart">Add to Cart</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
